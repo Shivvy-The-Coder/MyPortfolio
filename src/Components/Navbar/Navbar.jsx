@@ -8,7 +8,7 @@ const Navbar = () => {
         {/* Navbar sectoion begins here */}
             <div className='grid grid-cols-3 
             max-w-[100%]
-            justify-between items-center align-middle mt-[1px] mx-[10px] bg-primary  text-white '>
+            justify-between items-center align-middle mt-[5px] g bg-primary  text-white '>
 
                 {/* this will be for the "Logo Begins" of the PortFolio */}
                 
