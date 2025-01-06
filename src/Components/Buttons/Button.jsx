@@ -17,7 +17,6 @@ background-color: transparent;
 display: flex;
 justify-content: center;
 align-items: center;
-font-family: 'Times New Roman', Times, serif;
 text-align: center;
 font-weight: 600;
 color: white;

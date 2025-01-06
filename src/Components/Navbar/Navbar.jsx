@@ -33,12 +33,12 @@ const Navbar = () => {
                 
 
                 {/* Middle Navbar begins Here */}
-                <div className=''>
-                        <div className='grid grid-cols-4 gap-1 p-0 w-[50%] mx-auto '>
+                <div className='font-Poppin sm:text-xl hidden  sm:block '>
+                        <div className=' grid grid-cols-4 gap-1 p-0 w-[50%] mx-auto '>
                                 <Button name="About"/>
-                                <Button name="About"/>
-                                <Button name="About"/>
-                                <Button name="About"/>
+                                <Button name="Skills"/>
+                                <Button name="Projects"/>
+                                <Button name="Works"/> 
                         </div>
                 </div>
                 {/* Middle Navbar ends Here */}

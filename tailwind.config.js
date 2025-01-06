@@ -12,6 +12,7 @@ export default {
       },
       fontFamily:{
         Royale:["Bonheur Royale"],
+        Poppin:["Poppins"],
       },
       colors:{
           primary:"#302f2f",
