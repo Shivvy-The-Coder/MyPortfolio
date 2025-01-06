@@ -22,7 +22,7 @@ font-weight: 400;
 color: white;
 border:1px solid white;
 box-shadow: 0px 0px 50px 3px white;
-transition: background-color 0.4s ease-in, color 0.4s ease-out;
+transition: background-color 0.4s ease-in, color 0.4s ease-in;
 transition:0.4s color ease-in;
 border-radius: 7px;
 padding:0.5rem;

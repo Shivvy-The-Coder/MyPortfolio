@@ -1,6 +1,8 @@
 import React from 'react'
 import Logo from "/Images/Logo.png"
 import Button from '../Buttons/Button';
+import { BiSearchAlt } from "react-icons/bi";
+
 const Navbar = () => {
   return (
     <div>
@@ -52,8 +54,13 @@ const Navbar = () => {
 
 
                 {/* Ending Section beins here */}
-                <div>
-                                {/* Ending section */}
+                <div className='w-[100%] mx-auto flex justify-center'>
+                        <input type="text" placeholder='Search' 
+                                className='bg-white/15 rounded-[5px] p-[2px] relative'
+
+                         />
+                         <BiSearchAlt 
+                         className='absolute text-gray-600 text-2xl right-[11.9%] bottom-[91.2%]'/>
                 </div>
                 {/* Ending section ends here */}
                 
