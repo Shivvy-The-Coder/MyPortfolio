@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body
+{
+    /* background-color: #302f2f; */
+    /* background-color: #f1d9ba; */
+}
