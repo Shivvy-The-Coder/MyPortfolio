@@ -18,19 +18,24 @@ display: flex;
 justify-content: center;
 align-items: center;
 text-align: center;
-font-weight: 600;
+font-weight: 400;
 color: white;
-border:1px solid black;
-transition:0.3s background ease-in;
+border:1px solid white;
+box-shadow: 0px 0px 50px 3px white;
+transition: background-color 0.4s ease-in, color 0.4s ease-out;
+transition:0.4s color ease-in;
 border-radius: 7px;
-height: 150%;
-width: 100%;
+padding:0.5rem;
 cursor: pointer;
        &:hover{
-        background-color: #ffffffb2;
+        background-color: #ffffff;
         color: black;
         text-shadow: 1 1 1 0.1 white;
-        transition: 0ms.3s background ease-in;
+        box-shadow: none;
+        border:none;
+        font-weight: 500;
+        transition: background-color 0.4s ease-in, color 0.4s ease-in;
+        /* transition: 1.6s color ease-in; */
        }
 
 `;

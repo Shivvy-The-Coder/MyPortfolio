@@ -8,7 +8,7 @@ const Navbar = () => {
         {/* Navbar sectoion begins here */}
             <div className='grid grid-cols-3 
             max-w-[100%]
-            justify-between items-center align-middle mt-[5px] g bg-primary  text-white '>
+            justify-between items-center align-middle mt-[12px]  text-white '>
 
                 {/* this will be for the "Logo Begins" of the PortFolio */}
                 
@@ -33,8 +33,15 @@ const Navbar = () => {
                 
 
                 {/* Middle Navbar begins Here */}
-                <div className='font-Poppin sm:text-xl hidden  sm:block '>
-                        <div className=' grid grid-cols-4 gap-1 p-0 w-[50%] mx-auto '>
+                <div 
+                className='
+                font-Poppin  hidden  md:block 
+                lg:w-[70%] md:w-[100%] 
+                mx-auto bg-white/15 backdrop-blur-md border border-white/20 shadow-lg
+                p-[2.5%] rounded-lg overflow-hidden
+                
+                '>
+                        <div className=' grid grid-cols-4 p-0   gap-4 text-[70%]'>
                                 <Button name="About"/>
                                 <Button name="Skills"/>
                                 <Button name="Projects"/>
@@ -46,7 +53,7 @@ const Navbar = () => {
 
                 {/* Ending Section beins here */}
                 <div>
-                                Ending section
+                                {/* Ending section */}
                 </div>
                 {/* Ending section ends here */}
                 
