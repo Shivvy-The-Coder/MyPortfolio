@@ -3,6 +3,31 @@ import Logo from "/Images/Logo.png"
 import Button from '../Buttons/Button';
 import { BiSearchAlt } from "react-icons/bi";
 import { AiOutlineUser } from "react-icons/ai";
+import { FaRegSquareCaretDown } from "react-icons/fa6";
+
+
+const Actions=[
+        {
+                id:1,
+                name:"About",
+        }
+        ,
+        {
+                id:2,
+                name:"Skills",
+        }
+        ,
+        {
+                id:3,
+                name:"Projects",
+        }
+        ,
+        {
+                id:4,
+                name:"Works",
+        }
+        ,
+]
 
 const Navbar = () => {
   return (
@@ -41,17 +66,18 @@ const Navbar = () => {
                 {/* Middle Navbar begins Here */}
                 <div 
                 className='
-                font-Poppin  invisible  md:block 
-                lg:w-[70%] md:w-[110%] 
+                font-Poppin  invisible  md:visible
+                lg:w-[80%] md:w-[110%] 
                 mx-auto bg-white/1 backdrop-blur-md border border-white/20 shadow-lg
                 p-[2.5%] rounded-lg overflow-hidden
                 
                 '>
                         <div className=' grid grid-cols-4    gap-2 text-[70%]'>
-                                <Button  name="About"/>
-                                <Button name="Skills"/>
-                                <Button name="Projects"/>
-                                <Button name="Works"/> 
+                               {
+                                Actions.map((data)=>(
+                                        <Button
+                                        key={data.id}  name={data.name}/>  
+                                ))}
                         </div>
                 </div>
                 {/* Middle Navbar ends Here */}
@@ -59,8 +85,8 @@ const Navbar = () => {
 
                 {/* Ending Section beins here */}
                 <div className=' flex xxs:justify-end  sm:justify-center font-Poppin text-[90%] xxs:max-w-[100%]'>
-                        <div className='font-serif flex flex-cols-3 gap-2 items-center justify-center  '>
-                                <div><a href="#">STORE</a></div>
+                        <div className='font-serif flex flex-cols-3 gap-2 items-center justify-center text-xl '>
+                                <div className='sm:hidden'><FaRegSquareCaretDown/></div>
                                 <div><BiSearchAlt/></div>
                                 <div> <AiOutlineUser/> </div>
                         </div>
