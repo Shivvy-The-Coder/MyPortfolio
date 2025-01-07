@@ -10,8 +10,11 @@ const Navbar = () => {
 
         {/* Navbar sectoion begins here */}
             <div className='grid grid-cols-3 
-            max-w-[100%]
-            justify-between items-center align-middle mt-[12px]  text-white '>
+                            max-w-[100%]
+                            sm:justify-between  
+                            xxs:justify-center
+                            items-center align-middle 
+                            mt-[12px]  text-white '>
 
                 {/* this will be for the "Logo Begins" of the PortFolio */}
                 
@@ -55,7 +58,7 @@ const Navbar = () => {
 
 
                 {/* Ending Section beins here */}
-                <div className=' flex justify-center font-Poppin text-[80%]'>
+                <div className=' flex xxs:justify-begin  sm:justify-center font-Poppin text-[90%]'>
                         <div className='font-serif flex flex-cols-3 gap-10 items-center justify-center  '>
                                 <div><a href="#">STORE</a></div>
                                 <div><BiSearchAlt/></div>
