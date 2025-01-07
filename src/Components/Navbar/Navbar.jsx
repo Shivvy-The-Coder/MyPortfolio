@@ -10,10 +10,10 @@ const Navbar = () => {
 
         {/* Navbar sectoion begins here */}
             <div className='grid grid-cols-3 
-                            max-w-[100%]
-                            sm:justify-between  
-                            xxs:justify-center
-                            items-center align-middle 
+                            xxs:max-w-[90%]
+                            sm:max-w-[100%]
+                            mx-auto 
+                            items-center 
                             mt-[12px]  text-white '>
 
                 {/* this will be for the "Logo Begins" of the PortFolio */}
@@ -41,14 +41,14 @@ const Navbar = () => {
                 {/* Middle Navbar begins Here */}
                 <div 
                 className='
-                font-Poppin  hidden  md:block 
-                lg:w-[70%] md:w-[100%] 
+                font-Poppin  invisible  md:block 
+                lg:w-[70%] md:w-[110%] 
                 mx-auto bg-white/1 backdrop-blur-md border border-white/20 shadow-lg
                 p-[2.5%] rounded-lg overflow-hidden
                 
                 '>
-                        <div className=' grid grid-cols-4 p-0   gap-4 text-[80%]'>
-                                <Button name="About"/>
+                        <div className=' grid grid-cols-4    gap-2 text-[70%]'>
+                                <Button  name="About"/>
                                 <Button name="Skills"/>
                                 <Button name="Projects"/>
                                 <Button name="Works"/> 
@@ -58,8 +58,8 @@ const Navbar = () => {
 
 
                 {/* Ending Section beins here */}
-                <div className=' flex xxs:justify-begin  sm:justify-center font-Poppin text-[90%]'>
-                        <div className='font-serif flex flex-cols-3 gap-10 items-center justify-center  '>
+                <div className=' flex xxs:justify-end  sm:justify-center font-Poppin text-[90%] xxs:max-w-[100%]'>
+                        <div className='font-serif flex flex-cols-3 gap-2 items-center justify-center  '>
                                 <div><a href="#">STORE</a></div>
                                 <div><BiSearchAlt/></div>
                                 <div> <AiOutlineUser/> </div>
