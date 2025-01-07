@@ -28,10 +28,31 @@ const Actions=[
         }
         ,
 ]
+const Connect=[
+        {
+                id:1,
+                name:"Contact Me"
+                
+        },
+        {
+                id:2,
+                name:"Mail"
 
+        },
+        {
+                id:3,
+                name:"Login"
+
+        },
+        {
+                id:4,
+                name:"Sign Up"
+
+        },
+]
 const Navbar = () => {
   return (
-    <div>
+    <div className='position-fixed'>
 
         {/* Navbar sectoion begins here */}
             <div className='grid grid-cols-3 
@@ -86,6 +107,8 @@ const Navbar = () => {
                 {/* Ending Section beins here */}
                 <div className='cursor-pointer flex xxs:justify-end  sm:justify-center font-Poppin text-[90%] xxs:max-w-[100%] '>
                         <div className='font-serif flex flex-cols-3 gap-4 items-center justify-center text-xl '>
+                              
+                              {/* below is the oprion button for Smaller screens   */}
                                 <div className='
                                         relative group
                                         transition-all 
@@ -114,8 +137,54 @@ const Navbar = () => {
                                 </div>
                                 </div>
                                 
-                                <div ><BiSearchAlt/></div>
-                                <div> <AiOutlineUser/> </div>
+                              {/* here to include the search Options */}
+                                <div  className='
+                                                relative group
+                                                transition-all
+                                                duration-200'>
+                                        <BiSearchAlt
+                                        className='
+                                        text-3xl
+                                        group
+                                        relative group
+                                        duration-300 
+                                        group-hover:scale-[120%]'/>
+
+                                        <div className='absolute hidden group-hover:block w-[100px] right-2  '>
+                                                         <input
+                                                         className='w-[150%] h-5 rounded-lg p-[5px] text-sm' 
+                                                         type="text" 
+                                                         placeholder='Search'
+                                                          />
+                                        </div>
+                                </div>
+
+                                <div className='relative group
+                                                transition-all
+                                                duration-200'> 
+                                        
+                                        <AiOutlineUser className='
+                                                h-[6.5vh]
+                                        group
+                                        sm:hidden
+                                        relative group
+                                        transition-all 
+                                        duration-400
+                                        group-hover:rotate-180'/>
+                                <div className='absolute hidden group-hover:block w-[500%] rounded-md bg-transparent border-white top-[60px] right-[2px] '>
+                                        <ul >
+                                                        {
+                                                        Connect.map((data)=>(
+                                                                <li className='text-black inline-block w-full rounded-md p- text-[70%]  text-center  bg-white mt-1 cursor-pointer'
+                                                                 key={data.id}  
+                                                                 > 
+                                                                 {data.name}
+                                                               </li>
+                                                         ))}
+                                                
+                                        </ul>
+                                </div>
+                                </div>
                         </div>
                 </div>
 
