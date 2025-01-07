@@ -84,22 +84,22 @@ const Navbar = () => {
 
 
                 {/* Ending Section beins here */}
-                <div className='cursor-pointer flex xxs:justify-end  sm:justify-center font-Poppin text-[90%] xxs:max-w-[100%] h-[5vh] group'>
-                        <div className='font-serif flex flex-cols-3 gap-2 items-center justify-center text-xl '>
+                <div className='cursor-pointer flex xxs:justify-end  sm:justify-center font-Poppin text-[90%] xxs:max-w-[100%] '>
+                        <div className='font-serif flex flex-cols-3 gap-4 items-center justify-center text-xl '>
                                 <div className='
                                         relative group
                                         transition-all 
                                         duration-200'>
 
                                 <FaAnglesDown className='
-                                        
+                                        h-[6.5vh]
+                                        group
                                         sm:hidden
                                         relative group
                                         transition-all 
                                         duration-400
                                         group-hover:rotate-180'/>
-                                </div>
-                                <div className='absolute hidden group-hover:block w-[15%] rounded-md bg-transparent border-white top-[60px] right-[30px] '>
+                                <div className='absolute hidden group-hover:block w-[500%] rounded-md bg-transparent border-white top-[60px] right-[2px] '>
                                         <ul >
                                                         {
                                                         Actions.map((data)=>(
@@ -112,7 +112,9 @@ const Navbar = () => {
                                                 
                                         </ul>
                                 </div>
-                                <div><BiSearchAlt/></div>
+                                </div>
+                                
+                                <div ><BiSearchAlt/></div>
                                 <div> <AiOutlineUser/> </div>
                         </div>
                 </div>
