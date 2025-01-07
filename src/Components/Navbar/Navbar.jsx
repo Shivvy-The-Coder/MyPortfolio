@@ -115,14 +115,15 @@ const Navbar = () => {
                                         duration-200'>
 
                                 <FaAnglesDown className='
-                                        h-[6.5vh]
+        
                                         group
                                         sm:hidden
                                         relative group
                                         transition-all 
                                         duration-400
-                                        group-hover:rotate-180'/>
-                                <div className='absolute hidden group-hover:block w-[500%] rounded-md bg-transparent border-white top-[60px] right-[2px] '>
+                                        group-hover:rotate-180
+                                        text-3xl'/>
+                                <div className='absolute hidden group-hover:block w-[500%] rounded-md bg-transparent border-white top-[32px] right-[2px] '>
                                         <ul >
                                                         {
                                                         Actions.map((data)=>(
@@ -164,14 +165,14 @@ const Navbar = () => {
                                                 duration-200'> 
                                         
                                         <AiOutlineUser className='
-                                                h-[6.5vh]
                                         group
                                         sm:hidden
                                         relative group
                                         transition-all 
                                         duration-400
-                                        group-hover:rotate-180'/>
-                                <div className='absolute hidden group-hover:block w-[500%] rounded-md bg-transparent border-white top-[60px] right-[2px] '>
+                                        group-hover:scale-125
+                                        text-3xl'/>
+                                <div className='absolute hidden group-hover:block w-[500%] rounded-md bg-transparent border-white top-[32px] right-[2px] '>
                                         <ul >
                                                         {
                                                         Connect.map((data)=>(
