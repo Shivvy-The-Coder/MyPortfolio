@@ -21,7 +21,7 @@ text-align: center;
 font-weight: 400;
 color: white;
 border:1px solid white;
-box-shadow: 0px 0px 50px 3px white;
+box-shadow: 0px 0px 200px 3px white;
 transition: background-color 0.4s ease-in, color 0.4s ease-in;
 transition:0.4s color ease-in;
 border-radius: 7px;

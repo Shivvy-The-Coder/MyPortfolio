@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from "/Images/Logo.png"
 import Button from '../Buttons/Button';
 import { BiSearchAlt } from "react-icons/bi";
+import { AiOutlineUser } from "react-icons/ai";
 
 const Navbar = () => {
   return (
@@ -39,11 +40,11 @@ const Navbar = () => {
                 className='
                 font-Poppin  hidden  md:block 
                 lg:w-[70%] md:w-[100%] 
-                mx-auto bg-white/15 backdrop-blur-md border border-white/20 shadow-lg
+                mx-auto bg-white/1 backdrop-blur-md border border-white/20 shadow-lg
                 p-[2.5%] rounded-lg overflow-hidden
                 
                 '>
-                        <div className=' grid grid-cols-4 p-0   gap-4 text-[70%]'>
+                        <div className=' grid grid-cols-4 p-0   gap-4 text-[80%]'>
                                 <Button name="About"/>
                                 <Button name="Skills"/>
                                 <Button name="Projects"/>
@@ -54,13 +55,12 @@ const Navbar = () => {
 
 
                 {/* Ending Section beins here */}
-                <div className='w-[100%] mx-auto flex justify-center relative'>
-                        <input type="text" placeholder='Search' 
-                                className='bg-white/15 rounded-[5px] p-[2px] '
-
-                         />
-                         <BiSearchAlt 
-                         className='absolute text-gray-600 text-2xl right-[35.9%] bottom-0'/>
+                <div className=' flex justify-center font-Poppin text-[80%]'>
+                        <div className='font-serif flex flex-cols-3 gap-10 items-center justify-center  '>
+                                <div><a href="#">STORE</a></div>
+                                <div><BiSearchAlt/></div>
+                                <div> <AiOutlineUser/> </div>
+                        </div>
                 </div>
                 {/* Ending section ends here */}
                 
