@@ -54,13 +54,13 @@ const Navbar = () => {
 
 
                 {/* Ending Section beins here */}
-                <div className='w-[100%] mx-auto flex justify-center'>
+                <div className='w-[100%] mx-auto flex justify-center relative'>
                         <input type="text" placeholder='Search' 
-                                className='bg-white/15 rounded-[5px] p-[2px] relative'
+                                className='bg-white/15 rounded-[5px] p-[2px] '
 
                          />
                          <BiSearchAlt 
-                         className='absolute text-gray-600 text-2xl right-[11.9%] bottom-[91.2%]'/>
+                         className='absolute text-gray-600 text-2xl right-[35.9%] bottom-0'/>
                 </div>
                 {/* Ending section ends here */}
                 
