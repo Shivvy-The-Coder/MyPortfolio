@@ -38,10 +38,10 @@ const Hero = () => {
                     dots:false,
                     arrows:false,
                     infinite:true,
-                    speed:1000,
+                    speed:2000,
                     slidestoScroll:1,
                     autoplay:true,
-                    autoplaySpeed:4000,
+                    autoplaySpeed:5000,
                     cssEase:"Ease-in-out",
                     pauseonHover:false,
                     pauseonFocus:true
@@ -54,13 +54,15 @@ const Hero = () => {
     {/* it is for the designing pattern */}
         <div className='
             overflow-hidden
-            h-[60vh]
+            sm:h-[60vh]
+            sm:max-w-[70%]
             max-w-[90%]
             mx-auto
             mt-2
-            relative'>
+            relative
+            '>
             <div 
-            className='h-[50vh] bg-purple-400/20 
+            className='h-[50vh] bg-purple-400/40 
                        w-[50vh] absolute 
                        right-[40%] 
                        rotate-[50deg]  
@@ -70,8 +72,7 @@ const Hero = () => {
                        sm:h-[60vh]'>
                        
                        </div>
-            <div className='
-                       h-[50vh] bg-purple-400/20 
+            <div className=' h-[50vh] bg-purple-400/40 
                        w-[50vh] absolute 
                        -right-[10%] 
                        rotate-[50deg] -bottom-[40vh] 
@@ -79,7 +80,7 @@ const Hero = () => {
                        sm:h-[60vh]'></div>
 
             {/*Here the image carousel part will be conducted   */}
-            <div className='container pb-8 sm:pb-0'>
+            <div className='sm:mt-[10%] container pb-8 sm:pb-0 pt-5 px-3 max-w-[100%]'>
                   <Slider {...settings}>
 
                           {
@@ -87,10 +88,10 @@ const Hero = () => {
                                 <div key={data.id}>
 
                                       {/* from here on we will design the actual carousel */}
-                                      <div className='grid grid-cols-1 sm:grid-cols-2 lg:text-7xl font-bold text-white'>
-                                              <div>
-                                                    <h1 className='text-5xl sm:text-6xl'>{data.title}</h1>
-                                                    <p className='text-sm'>{data.description}</p>
+                                      <div className='grid grid-cols-1 sm:grid-cols-2 lg:text-7xl text-white gap-4 '>
+                                              <div className='flex flex-col gap-6 sm:gap-10 '>
+                                                    <h1 className='text-3xl sm:text-5xl font-bold font-Poppin'>{data.title}</h1>
+                                                    <p className='sm:text-[20px] text-[16px] text-white font-Poppin'>{data.Description}</p>
                                                     
                                               </div>
 
