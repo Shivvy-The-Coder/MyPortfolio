@@ -162,11 +162,10 @@ const Navbar = () => {
 
                                 <div className='relative group
                                                 transition-all
-                                                duration-200'> 
+                                                duration-400'> 
                                         
                                         <AiOutlineUser className='
                                         group
-                                        sm:hidden
                                         relative group
                                         transition-all 
                                         duration-400
