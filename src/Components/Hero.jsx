@@ -15,18 +15,21 @@ const ImagesList = [
     img:img1,
     title:"Fast-Track Your Online Presence",
     Description:"Designed a fast Website with modern Technologies , taking no time to load and reload,Stream and view Images, giving best user experience ",
+    name:'Explore'
   },
   {
     id:2,
     img:img2,
     title:"Modern Websites for a Progressive Digital Experience.",
     Description:"Modern Websites for a Progressive Digital Experience offers sleek, innovative designs that enhance user engagement and deliver exceptional functionality for the digital age.",
+    name:'Visit'
   },
   {
     id:3,
     img:img3,
     title:"Designs That Adapt, No Matter the Device.",
     Description:"ensures seamless user experiences across all screen sizes, providing consistent and optimized layouts for every device",
+    name:'Connnect'
   }
 ]
 
@@ -54,12 +57,13 @@ const Hero = () => {
     {/* it is for the designing pattern */}
         <div className='
             overflow-hidden
-            sm:h-[60vh]
             sm:max-w-[70%]
             max-w-[90%]
             mx-auto
-            mt-2
+            mt-[5vh]
             relative
+            sm:p-12
+            rounded-lg
             '>
             <div 
             className='h-[50vh] bg-purple-400/40 
@@ -80,7 +84,7 @@ const Hero = () => {
                        sm:h-[60vh]'></div>
 
             {/*Here the image carousel part will be conducted   */}
-            <div className='sm:mt-[10%] container pb-8 sm:pb-0 pt-5 px-3 max-w-[100%]'>
+            <div className='items-center  container pb-8 sm:pb-0 pt-5 px-3 max-w-[100%]'>
                   <Slider {...settings}>
 
                           {
@@ -88,17 +92,16 @@ const Hero = () => {
                                 <div key={data.id}>
 
                                       {/* from here on we will design the actual carousel */}
-                                      <div className='grid grid-cols-1 sm:grid-cols-2 lg:text-7xl text-white gap-4 '>
-                                              <div className='flex flex-col gap-6 sm:gap-10 '>
+                                      <div className='grid grid-cols-1 sm:grid-cols-2   text-white gap-4 relative'>
+                                              <div className='flex flex-col gap-6 sm:gap-10 order-2 sm:order-1 px-3'>
                                                     <h1 className='text-3xl sm:text-5xl font-bold font-Poppin'>{data.title}</h1>
                                                     <p className='sm:text-[20px] text-[16px] text-white font-Poppin'>{data.Description}</p>
-                                                    
+                                                    <button className=' bg-purple-500 sm:w-[30%] sm:h-[3.4vh] w-[20%]  rounded-lg  shadow-white'>{data.name}</button>                                                    
                                               </div>
 
-                                              <div className='order-1 sm:order-2'>
+                                              <div className='order-1 sm:order-2 my-auto'>
                                                       <div>
-                                                        <img src={data.img} alt={data.title}
-                                                        className='' />
+                                                        <img src={data.img} alt={data.title} />
                                                       </div>
                                               </div>
                                       </div>
