@@ -89,7 +89,8 @@ const Navbar = () => {
                 className='
                 font-Poppin  invisible  md:visible
                 lg:w-[80%] md:w-[110%] 
-                mx-auto bg-white/1 backdrop-blur-md border border-white/20 shadow-lg
+                mx-auto bg-yellow-500/10
+                backdrop-blur-md border border-white/20 shadow-lg
                 p-[2.5%] rounded-lg overflow-hidden
                 
                 '>
@@ -97,6 +98,7 @@ const Navbar = () => {
                                {
                                 Actions.map((data)=>(
                                         <Button
+                                        className=" text-yellow-400"
                                         key={data.id}  name={data.name}/>  
                                 ))}
                         </div>

@@ -1,11 +1,10 @@
 import React from 'react';
-import img1 from "../../public/Images/Fast.png";
-import img2 from "../../public/Images/ModernDesigns.png";
-import img3 from "../../public/Images/Responsive.png";
+import img1 from "/Images/Fast.png";
+import img2 from "/Images/ModernDesigns.png";
+import img3 from "/Images/Responsive.png";
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from 'react-slick';
-import Button from './Buttons/Button';
 
 
 // here i am making a list of images and its attributes that i am going to use 
@@ -63,10 +62,10 @@ const Hero = () => {
             mt-[5vh]
             relative
             sm:p-12
-            rounded-lg
+            rounded-2xl
             '>
             <div 
-            className='h-[50vh] bg-purple-400/40 
+            className='h-[50vh] bg-yellow-500/90 
                        w-[50vh] absolute 
                        right-[40%] 
                        rotate-[50deg]  
@@ -76,11 +75,11 @@ const Hero = () => {
                        sm:h-[60vh]'>
                        
                        </div>
-            <div className=' h-[50vh] bg-purple-400/40 
+            <div className=' h-[50vh] bg-yellow-500/80
                        w-[50vh] absolute 
-                       -right-[10%] 
-                       rotate-[50deg] -bottom-[40vh] 
-                       rounded-2xl mt-1  sm:right-[20%]
+                       right-[0%] 
+                       rotate-[45deg] -bottom-[40vh] 
+                       rounded-2xl mt-1  sm:right-[10%]
                        sm:h-[60vh]'></div>
 
             {/*Here the image carousel part will be conducted   */}
@@ -94,9 +93,11 @@ const Hero = () => {
                                       {/* from here on we will design the actual carousel */}
                                       <div className='grid grid-cols-1 sm:grid-cols-2   text-white gap-4 relative'>
                                               <div className='flex flex-col gap-6 sm:gap-10 order-2 sm:order-1 px-3'>
-                                                    <h1 className='text-3xl sm:text-5xl font-bold font-Poppin'>{data.title}</h1>
+                                                    <h1 className='text-3xl sm:text-5xl font-bold font-Poppin'
+                                                        style={{ textShadow: "3px 3px 2px rgba(0, 0, 0, 0.5)" }}
+                                                    >{data.title}</h1>
                                                     <p className='sm:text-[20px] text-[16px] text-white font-Poppin'>{data.Description}</p>
-                                                    <button className=' bg-purple-500 sm:w-[30%] sm:h-[3.4vh] w-[20%]  rounded-lg  shadow-white'>{data.name}</button>                                                    
+                                                    <button className=' bg-green-500 w-[20%] sm:h-[3.4vh] p-1  rounded-lg  shadow-white'>{data.name}</button>                                                    
                                               </div>
 
                                               <div className='order-1 sm:order-2 my-auto'>
