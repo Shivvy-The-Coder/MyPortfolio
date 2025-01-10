@@ -67,7 +67,7 @@ const Skills = () => {
 
     <div>
         {/* This Section will be for the upper information predominantely as an introduction ot the section */}
-        <div className=' text-white font-Poppin text-center  max-w-[80%] mx-auto mt-20 '>
+        <div className=' text-white font-Poppin text-center  max-w-[90%] mx-auto mt-20 '>
             <div>
                 <p>What I Bring to the Table</p>
             </div>
@@ -78,16 +78,16 @@ const Skills = () => {
                  >SKILL'S SECTION</h1>
             </div>
             {/* now here i will be uploading the images of all the skills i posses */}
-            <div className='sm:flex sm:flex-cols sm:flex-wrap gap-10 p-2 justify-center align-middle items-center mt-20 grid grid-cols-3 '>
+            <div className='sm:flex sm:flex-cols sm:flex-wrap gap-5 p-2 justify-center align-middle items-center mt-20 grid grid-cols-3  '>
                         {
                             Skill.map((data)=>(
                               <div
                               key={data.id} >
-                                <h3 className=''>
+                                <h3 className='text-sm text-nowrap overflow-hidden'>
                                     {data.title}
                                 </h3>
                                 <img 
-                                    className='sm:h-40 sm:w-40 h-20 w-20 rounded-3xl bg-white p-2' 
+                                    className='sm:h-40 sm:w-40 h-18 w-20 rounded-2xl bg-white p-2 mx-auto cursor-pointer' 
                                      src={data.img} alt="" />
                                 <p>
                                     {data.Exper}
