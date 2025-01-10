@@ -7,9 +7,8 @@ import Reacct from "/Images/ReactJs.png"
 import Node from "/Images/NodeJs.png" 
 import Mongo from "/Images/MongoDB.png" 
 import MYSQL from "/Images/MySqL.png" 
-import AOS from 'aos'
 import 'aos/dist/aos.css'
-
+import styled from 'styled-components'
 
 const Skill =[
     {
@@ -116,7 +115,7 @@ const Skills = () => {
                                     {data.title}
                                 </h3>
                                 <img 
-                                    className='sm:h-40 sm:w-40 h-18 w-20 rounded-2xl p-2 mx-auto cursor-pointer bg-white/30' 
+                                    className='sm:h-40 sm:w-40 h-18 w-20 rounded-2xl p-2 mx-auto cursor-pointer border border-yellow-500'   
                                      src={data.img} alt="" />
                                 <p>
                                     {data.Exper}
@@ -135,3 +134,12 @@ const Skills = () => {
 }
 
 export default Skills;
+
+
+const ThreeDEffect=styled.div`
+   transition: transform 0.3s ease-in-out;
+   &:hover{
+    transition: rotateX(20deg) rotateY(20deg);
+   
+   }
+`;
