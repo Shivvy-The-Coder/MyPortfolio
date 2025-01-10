@@ -78,17 +78,20 @@ const Skills = () => {
                  >SKILL'S SECTION</h1>
             </div>
             {/* now here i will be uploading the images of all the skills i posses */}
-            <div className='flex flex-cols flex-wrap gap-20 p-2 justify-center align-middle items-center mt-20'>
+            <div className='sm:flex sm:flex-cols sm:flex-wrap gap-10 p-2 justify-center align-middle items-center mt-20 grid grid-cols-3 '>
                         {
                             Skill.map((data)=>(
                               <div
                               key={data.id} >
                                 <h3 className=''>
                                     {data.title}
-                                    <img 
-                                    className='sm:h-40 sm:w-40 h-20 w-20' 
-                                     src={data.img} alt="" />
                                 </h3>
+                                <img 
+                                    className='sm:h-40 sm:w-40 h-20 w-20 rounded-3xl bg-white p-2' 
+                                     src={data.img} alt="" />
+                                <p>
+                                    {data.Exper}
+                                </p>
                               </div>      
                             ))}
             </div>
