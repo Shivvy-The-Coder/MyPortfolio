@@ -52,7 +52,7 @@ const Connect=[
 ]
 const Navbar = () => {
   return (
-    <div className='position-fixed'>
+    <div className=''>
 
         {/* Navbar sectoion begins here */}
             <div className='grid grid-cols-3 
@@ -60,6 +60,7 @@ const Navbar = () => {
                             sm:max-w-[100%]
                             mx-auto 
                             items-center 
+                            position:fixed
                             mt-[12px]  text-white '>
 
                 {/* this will be for the "Logo Begins" of the PortFolio */}
