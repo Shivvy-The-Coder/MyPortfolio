@@ -3,10 +3,16 @@ import React from 'react'
 
 const Cards = ({name , link , img , desc}) => {
   return (
-    <div>
+    <div> 
 
           <div>
-                <div className='flex flex-col font-Poppin font-bold p-3 border  overflow-hidden sm:h-[55vh] mb-[10vh]  sm:scale-90'>
+                <div className='flex flex-col font-Poppin font-bold p-3  overflow-hidden  mb-[10vh]  sm:scale-90
+                sm:rounded-lg sm:shadow-md sm:shadow-gray-500/50
+                bg-white/10
+                backdrop-blur-3xl
+                border-[5px]
+                border-white/10 shadow-lg rounded-sm 
+                '>    
                       {/*For HEading Section  */}
                       <div>
                         <h1 className='text-4xl text-center '

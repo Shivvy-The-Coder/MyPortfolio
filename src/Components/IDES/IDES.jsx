@@ -31,7 +31,7 @@ const IDE=[
 
 const IDES = () => {
   return (
-    <div>
+    <div  className='bg-black-900'>
         <div className=' max-w-[70%] mx-auto flex flex-col mt-20'>
             <div>
                 <p data-aos="fade-left"
@@ -50,7 +50,7 @@ const IDES = () => {
 
             <div>
                 <p data-aos="fade-up" 
-                 className='text-yellow-500'>Technical expertise, innovation, and problem-solving drive impactful results.</p>
+                 className='text-yellow-500 text-left'>Technical expertise, innovation, and problem-solving drive impactful results.</p>
             </div>
               <div className='mt-20 '>
               <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-2  '>
