@@ -67,7 +67,7 @@ const Navbar = () => {
                             mt-[12px]  text-white
                             z-[2000] 
                              bg-yellow-500/10
-                                backdrop-blur-md border border-white/20 shadow-lg rounded-sm overflow-hidden'>
+                                backdrop-blur-xl border border-white/20 shadow-lg rounded-sm '>
 
                 {/* this will be for the "Logo Begins" of the PortFolio */}
                 

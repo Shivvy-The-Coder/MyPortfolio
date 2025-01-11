@@ -5,13 +5,13 @@ const IDES = () => {
     <div>
         <div className=' max-w-[70%] mx-auto flex flex-col mt-20'>
             <div>
-                <p data-aos="fade-up"
+                <p data-aos="fade-left"
                 className='text-yellow-500'
                 >Faimiliar IDE and Development Enviroment</p>
             </div>
             <div>
                 <h1 data-aos="fade-up" 
-                    data-aos-
+                    
                  className='
                  text-white
                  text-3xl font-bold'

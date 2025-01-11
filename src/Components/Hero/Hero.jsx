@@ -103,7 +103,8 @@ const Hero = () => {
 
                                               <div className='order-1 sm:order-2 my-auto'>
                                                       <div>
-                                                        <img src={data.img} alt={data.title} />
+                                                        <img
+                                                        src={data.img} alt={data.title} />
                                                       </div>
                                               </div>
                                       </div>
