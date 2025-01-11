@@ -1,10 +1,10 @@
 import React from 'react'
 import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
-import Skills from './Components/Skills';
+import Skills from './Components/Skills/Skills';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import IDES from './Components/IDES';
+import IDES from './Components/IDES/IDES';
 
 const App = () => {
   React.useEffect(()=>{
