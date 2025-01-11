@@ -114,8 +114,8 @@ const Skills = () => {
             </div>
             {/* now here i will be uploading the images of all the skills i posses */}
             <div className='
-                            sm:max-w-[60%] sm:flex sm:flex-cols sm:flex-wrap sm:gap-5 
-                            mx-auto  gap-2 p-2 
+                            sm:max-w-[60%] sm:flex sm:flex-cols sm:flex-wrap sm:gap-15
+                            mx-auto  gap-5 p-2 
                             justify-center   
                             mt-10 
                             grid grid-cols-3  mb-12
@@ -157,7 +157,7 @@ const Skills = () => {
                                                hover:-rotate-[360deg]
                                                hover: duration-[1200ms]
                                                rounded-xl
-                                               bg-black'   
+                                               p-2'   
                                      src={data.img} alt="" />
                                 </div>
                                 <p>
