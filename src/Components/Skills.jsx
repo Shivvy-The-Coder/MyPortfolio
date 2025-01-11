@@ -55,7 +55,7 @@ const Skill =[
         id:6,
         img:Node,
         title:"Node Js",
-        Exper:"1 Years",
+        Exper:"1 Year",
         aosDelay:"1000",
         aosAnimation:"fade-up"
     },
@@ -63,7 +63,7 @@ const Skill =[
         id:7,
         img:Mongo,
         title:"Mongo DB",
-        Exper:"1 Years",
+        Exper:"1 Year",
         aosDelay:"1200",
         aosAnimation:"fade-up"
     },
@@ -114,7 +114,7 @@ const Skills = () => {
             </div>
             {/* now here i will be uploading the images of all the skills i posses */}
             <div className='
-                            sm:max-w-[60%] sm:flex sm:flex-cols sm:flex-wrap sm:gap-15
+                            sm:max-w-[60%] sm:flex sm:flex-cols sm:flex-wrap sm:gap-
                             mx-auto  gap-5 p-2 
                             justify-center   
                             mt-10 
@@ -134,7 +134,7 @@ const Skills = () => {
                                                 font-serif 
                                                 text-nowrap 
                                                 overflow-hidden
-                                                m-[]12px
+                                               
                                                 '>
                                     {data.title}
                                 </h3>
@@ -157,10 +157,11 @@ const Skills = () => {
                                                hover:-rotate-[360deg]
                                                hover: duration-[1200ms]
                                                rounded-xl
-                                               p-2'   
+                                               sm:p-2
+                                               p-0'   
                                      src={data.img} alt="" />
                                 </div>
-                                <p>
+                                <p className='text-center  text-yellow-500 font-light'>
                                     {data.Exper}
                                 </p>
                               </div>      
