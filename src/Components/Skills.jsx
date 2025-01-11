@@ -158,8 +158,10 @@ const Skills = () => {
                                                hover: duration-[1200ms]
                                                rounded-xl
                                                sm:p-2
-                                               p-0'   
-                                     src={data.img} alt="" />
+                                               p-0
+                                               contrast-100
+                                               saturate-200'
+                                     src={data.img} alt=""/>
                                 </div>
                                 <p className='text-center  text-yellow-500 font-light'>
                                     {data.Exper}

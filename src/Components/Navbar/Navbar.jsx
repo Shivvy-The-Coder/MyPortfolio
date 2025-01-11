@@ -57,11 +57,17 @@ const Navbar = () => {
         {/* Navbar sectoion begins here */}
             <div className='grid grid-cols-3 
                             xxs:max-w-[90%]
-                            sm:max-w-[100%]
-                            mx-auto 
+                            sm:max-w-[80%]
                             items-center 
-                            position:fixed
-                            mt-[12px]  text-white '>
+                            fixed
+                            top-0
+                            sm:left-[10%]
+                            right-[5%]
+                            mx-auto 
+                            mt-[12px]  text-white
+                            z-[2000] 
+                             bg-yellow-500/10
+                                backdrop-blur-md border border-white/20 shadow-lg rounded-sm overflow-hidden'>
 
                 {/* this will be for the "Logo Begins" of the PortFolio */}
                 

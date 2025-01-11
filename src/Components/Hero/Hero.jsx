@@ -59,7 +59,8 @@ const Hero = () => {
             sm:max-w-[70%]
             max-w-[90%]
             mx-auto
-            mt-[5vh]
+            sm:mt-[15vh]
+            mt-[10vh]
             relative
             sm:p-12
             rounded-2xl
