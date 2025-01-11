@@ -79,6 +79,16 @@ const Skill =[
 ]
 
 const Skills = () => {
+// glass texture css
+    const glassStyles = {
+        backgroundColor: "rgba(255, 255, 255, 0.1)", // Semi-transparent white
+        border: "1px solid rgba(255, 255, 255, 0.2)", // Subtle border
+        borderRadius: "1rem", // Rounded corners
+        backdropFilter: "blur(10px) brightness(0.9)", // Frosted glass effect
+        boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)", // Shadow
+      };
+
+
   return (
 
 
@@ -108,13 +118,15 @@ const Skills = () => {
                             mx-auto  gap-2 p-2 
                             justify-center   
                             mt-10 
-                            grid grid-cols-3  mb-12'>
+                            grid grid-cols-3  mb-12
+                            '>
                         {
                             Skill.map((data)=>(
                               <div
                               data-aos={data.aosAnimation}
                               data-aos-delay={data.aosDelay}
                               className='m-1'
+                              style={glassStyles}
                               key={data.id} >
                                 <h3 className='
                                                 text-sm
@@ -122,23 +134,27 @@ const Skills = () => {
                                                 font-serif 
                                                 text-nowrap 
                                                 overflow-hidden
+                                                m-[]12px
                                                 '>
                                     {data.title}
                                 </h3>
-                                <div className='sm:h-40 
+                                <div className='
+                                               transition-transform transform
+                                               sm:h-40 
                                                sm:w-40 
+                                               p-[10px]
                                                h-18 w-20 
                                                rounded-2xl 
-                                               p-2 mx-auto 
+                                               mx-auto 
                                                cursor-pointer
-                                               border-[5px] border-yellow-400
+                                               border-[3px]
+                                               hover:border-[2px]
+                                               hover:scale-110
                                              bg-slate-100/50'>
                                 <img 
                                     className='transition-transform transform 
-                                               hover:translate-x-0
-                                               hover:-translate-y-5
                                                hover:-rotate-[360deg]
-                                               hover: duration-2000
+                                               hover: duration-[1200ms]
                                                rounded-xl'   
                                      src={data.img} alt="" />
                                 </div>
@@ -159,12 +175,3 @@ const Skills = () => {
 }
 
 export default Skills;
-
-
-const ThreeDEffect=styled.div`
-   transition: transform 0.3s ease-in-out;
-   &:hover{
-    transition: rotateX(20deg) rotateY(20deg);
-   
-   }
-`;
