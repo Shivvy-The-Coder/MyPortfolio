@@ -117,7 +117,9 @@ const Skills = () => {
                               className='m-1'
                               key={data.id} >
                                 <h3 className='
-                                                text-sm 
+                                                text-sm
+                                                sm:text-md
+                                                font-serif 
                                                 text-nowrap 
                                                 overflow-hidden
                                                 '>
@@ -128,15 +130,15 @@ const Skills = () => {
                                                h-18 w-20 
                                                rounded-2xl 
                                                p-2 mx-auto 
-                                               cursor-pointer border-2 
-                                             bg-slate-100/20'>
+                                               cursor-pointer
+                                               border-[5px] border-yellow-400
+                                             bg-slate-100/50'>
                                 <img 
-                                    className='transition transform 
-                                               hover:scale-[110%]
-                                               hover: duration-2000
+                                    className='transition-transform transform 
                                                hover:translate-x-0
                                                hover:-translate-y-5
-                                               hover:rotate-[360deg]
+                                               hover:-rotate-[360deg]
+                                               hover: duration-2000
                                                rounded-xl'   
                                      src={data.img} alt="" />
                                 </div>
