@@ -103,7 +103,7 @@ const Skills = () => {
                  className='text-yellow-500'>Technical expertise, innovation, and problem-solving drive impactful results.</p>
             </div>
             {/* now here i will be uploading the images of all the skills i posses */}
-            <div className='sm:flex sm:flex-cols sm:flex-wrap sm:gap-5 gap-2 p-2 justify-center   mt-10 grid grid-cols-3  '>
+            <div className='sm:flex sm:flex-cols sm:flex-wrap sm:gap-5 gap-2 p-2 justify-center   mt-10 grid grid-cols-3  mb-12'>
                         {
                             Skill.map((data)=>(
                               <div
