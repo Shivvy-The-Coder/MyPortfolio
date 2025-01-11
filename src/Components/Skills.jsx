@@ -148,14 +148,16 @@ const Skills = () => {
                                                mx-auto 
                                                cursor-pointer
                                                border-[3px]
+                                               border-white/40
                                                hover:border-[2px]
                                                hover:scale-110
-                                             bg-slate-100/50'>
+                                             bg-slate-100/30'>
                                 <img 
                                     className='transition-transform transform 
                                                hover:-rotate-[360deg]
                                                hover: duration-[1200ms]
-                                               rounded-xl'   
+                                               rounded-xl
+                                               bg-black'   
                                      src={data.img} alt="" />
                                 </div>
                                 <p>
