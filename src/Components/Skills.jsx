@@ -103,7 +103,12 @@ const Skills = () => {
                  className='text-yellow-500'>Technical expertise, innovation, and problem-solving drive impactful results.</p>
             </div>
             {/* now here i will be uploading the images of all the skills i posses */}
-            <div className='sm:flex sm:flex-cols sm:flex-wrap sm:gap-5 gap-2 p-2 justify-center   mt-10 grid grid-cols-3  mb-12'>
+            <div className='
+                            sm:max-w-[60%] sm:flex sm:flex-cols sm:flex-wrap sm:gap-5 
+                            mx-auto  gap-2 p-2 
+                            justify-center   
+                            mt-10 
+                            grid grid-cols-3  mb-12'>
                         {
                             Skill.map((data)=>(
                               <div
@@ -111,12 +116,30 @@ const Skills = () => {
                               data-aos-delay={data.aosDelay}
                               className='m-1'
                               key={data.id} >
-                                <h3 className='text-sm text-nowrap overflow-hidden'>
+                                <h3 className='
+                                                text-sm 
+                                                text-nowrap 
+                                                overflow-hidden
+                                                '>
                                     {data.title}
                                 </h3>
+                                <div className='sm:h-40 
+                                               sm:w-40 
+                                               h-18 w-20 
+                                               rounded-2xl 
+                                               p-2 mx-auto 
+                                               cursor-pointer border-2 
+                                             bg-slate-100/20'>
                                 <img 
-                                    className='sm:h-40 sm:w-40 h-18 w-20 rounded-2xl p-2 mx-auto cursor-pointer border border-yellow-500'   
+                                    className='transition transform 
+                                               hover:scale-[110%]
+                                               hover: duration-2000
+                                               hover:translate-x-0
+                                               hover:-translate-y-5
+                                               hover:rotate-[360deg]
+                                               rounded-xl'   
                                      src={data.img} alt="" />
+                                </div>
                                 <p>
                                     {data.Exper}
                                 </p>
