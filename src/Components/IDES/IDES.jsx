@@ -3,6 +3,8 @@ import Cards from '../Cards';
 import VSC from "/Images/VSCode.ico"
 import Git from '/Images/Git.png'
 import Github from "/Images/Github.png"
+import NetBeans from "/Images/NetBeans.png"
+import PyCharm from "/Images/PyCharm.png"
 
 const IDE=[
   {
@@ -32,6 +34,25 @@ const IDE=[
   ,aosdelay:"900",
   animation:"fade-left"
 },
+,
+  {
+    id:4,
+    name:"Net-Beans",
+    image:NetBeans,
+    link:"#",
+    desc:"NetBeans is an open-source integrated development environment (IDE) for Java, PHP, HTML, and other languages. It offers features like code editing, debugging, profiling, and version control, enhancing developer productivity."
+  ,aosdelay:"1200",
+  animation:"fade-right"
+},
+{
+  id: 5,
+  name: "PyCharm",
+  image: PyCharm,
+  link: "#",
+  desc: "PyCharm is a powerful integrated development environment (IDE) developed by JetBrains, specifically designed for Python programming. It offers intelligent code assistance, debugging, testing, and supports web development frameworks like Django and Flask.",
+  aosdelay: "1200",
+  animation: "fade-down"
+}
 
 ]
 
