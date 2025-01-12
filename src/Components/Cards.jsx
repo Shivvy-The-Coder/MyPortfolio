@@ -29,7 +29,7 @@ const Cards = ({name , link , img , desc,delay,animation}) => {
 
                       {/* for image section */}
                       <div
-                        className='p-10 flex justify-center w-[80%] sm:w-[80%] mx-auto bg-white/20 rounded-lg '
+                        className='p-10 flex justify-center w-[80%] sm:w-[80%] mx-auto bg-white/10 rounded-lg '
                       >
                         <img 
                         className='transition-transform duration-1000 ease-in-out transform hover:scale-[125%]  hover:translate-y-[-3vh] contrast-200 saturate-200 '

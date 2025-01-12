@@ -63,7 +63,7 @@ const IDES = () => {
             <div>
                 <p data-aos="fade-left"
                 data-aos-delay="600"
-                className='text-yellow-500'
+                className='text-yellow-500 ml-[4%]'
                 >Faimiliar IDE and Development Enviroment</p>
             </div>
             <div>
@@ -71,7 +71,7 @@ const IDES = () => {
                 data-aos-delay="1000"
                  className='
                  text-white
-                 text-3xl font-bold'
+                 text-3xl font-bold ml-[4%]'
                  style={{ textShadow: "1px 1px 8px  rgba(60, 61, 61, 0.863)" }}
                  >PLATFORM AND TOOLS</h1>
             </div>
@@ -79,7 +79,7 @@ const IDES = () => {
             <div>
                 <p data-aos="fade-up" 
                 data-aos-delay="600"
-                 className='text-yellow-500 text-left'>Technical expertise, innovation, and problem-solving drive impactful results.</p>
+                 className='text-yellow-500 text-left ml-[4%]'>Technical expertise, innovation, and problem-solving drive impactful results.</p>
             </div>
               <div className='mt-20 '>
               <div

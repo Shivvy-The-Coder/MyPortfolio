@@ -6,7 +6,7 @@ const Inputs = ({name, type, placeholder}) => {
     <div>
         <div className='flex flex-row justify-center align-middle items-center text-white font-Poppin font-bold'>
             <div
-            className='w-[15%] text-left'
+            className='w-[15%] text-left bg-black p-1 rounded-md'
             >
                 {name}
             </div>
@@ -16,7 +16,7 @@ const Inputs = ({name, type, placeholder}) => {
             >
                 <form >
                     <input
-                    className='font-normal w-[90%] rounded-[5px] h-[3vh] p-2' 
+                    className='font-normal w-[90%] rounded-[5px] h-[3vh] p-2 bg-white/10 ' 
                     type={type} placeholder={placeholder} />
                 </form>
             </div>
