@@ -24,8 +24,14 @@ export default {
         padding:{
           DEFAULT:"1rem"       
         }
-      }
+      },
+      textShadow:{
+          white:"2px 2px 4px rgba(255, 255, 255, 0.5)",
+          black:"2px 2px 4px rgba(0, 0, 0,1)"
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-textshadow'),
+  ],
 }

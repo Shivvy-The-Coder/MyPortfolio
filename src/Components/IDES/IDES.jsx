@@ -10,22 +10,28 @@ const IDE=[
     name:"VS Code",
     image:VSC,
     link:"#",
-    desc:"Visual Studio Code (VS Code) is a lightweight, versatile code editor with extensive extensions, built-in Git support, debugging tools, and customization options, making it a favorite among developers for seamless coding across multiple languages."
+    desc:"Visual Studio Code (VS Code) is a fast, customizable code editor with extensive extensions, built-in Git support, debugging tools, and multi-language compatibility, popular for seamless and efficient development.",
+    aosdelay:"900",
+    animation:"fade-right"
   },
   {
     id:2,
     name:"Git",
     image:Git,
     link:"#",
-    desc:"Git is a powerful,distributed version control system that allows developers to track changes, collaborate efficiently, and manage code history, making it essential for modern software development."
+    desc:"Git is a distributed version control system enabling developers to track changes, manage code versions, and collaborate efficiently, making it a cornerstone for modern software development workflows."
+  ,aosdelay:"1200",
+  animation:"fade-up"
   },
   {
     id:3,
     name:"Git Hub",
     image:Github,
     link:"#",
-    desc:"GitHub is a cloud-based platform for hosting Git repositories, offering features like collaboration tools, issue tracking, CI/CD integration, and open-source project hosting, widely used by developers for teamwork and code sharing."
-  },
+    desc:"GitHub is a cloud-based platform for hosting Git repositories, offering collaboration, issue tracking, CI/CD integration, and open-source project hosting, simplifying teamwork and code sharing for developers."
+  ,aosdelay:"900",
+  animation:"fade-left"
+},
 
 ]
 
@@ -40,7 +46,6 @@ const IDES = () => {
             </div>
             <div>
                 <h1 data-aos="fade-up" 
-                    
                  className='
                  text-white
                  text-3xl font-bold'
@@ -53,14 +58,19 @@ const IDES = () => {
                  className='text-yellow-500 text-left'>Technical expertise, innovation, and problem-solving drive impactful results.</p>
             </div>
               <div className='mt-20 '>
-              <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-2  '>
+              <div
+              data-aos="fade-up"
+               className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-2  '>
                 {
+                    
                       IDE.map((data)=>(
                         <Cards
                         key={data.id}
                         name={data.name}
                         img={data.image}
                         desc={data.desc}
+                        delay={data.aosdelay}
+                        animation={data.animation}
                         />
                       ))
                 }
