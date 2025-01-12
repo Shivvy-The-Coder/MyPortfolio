@@ -5,6 +5,7 @@ import Skills from './Components/Skills/Skills';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import IDES from './Components/IDES/IDES';
+import Form from './Components/Form/Form';
 
 const App = () => {
   React.useEffect(()=>{
@@ -22,6 +23,7 @@ const App = () => {
       <Hero/>
       <Skills/>
       <IDES/>
+      <Form/>
     </div>
   )
 }

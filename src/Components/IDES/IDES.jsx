@@ -27,7 +27,7 @@ const IDE=[
   },
   {
     id:3,
-    name:"Git Hub",
+    name:"Git-Hub",
     image:Github,
     link:"#",
     desc:"GitHub is a cloud-based platform for hosting Git repositories, offering collaboration, issue tracking, CI/CD integration, and open-source project hosting, simplifying teamwork and code sharing for developers."
@@ -49,7 +49,7 @@ const IDE=[
   name: "PyCharm",
   image: PyCharm,
   link: "#",
-  desc: "PyCharm is a powerful integrated development environment (IDE) developed by JetBrains, specifically designed for Python programming. It offers intelligent code assistance, debugging, testing, and supports web development frameworks like Django and Flask.",
+  desc: "PyCharm is a powerful integrated development environment (IDE) developed by JetBrains, specifically designed for Python programming. It offers intelligent code assistance, debugging, testing, and supports Django and Flask.",
   aosdelay: "1200",
   animation: "fade-down"
 }

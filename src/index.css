@@ -6,7 +6,7 @@
 
 body
 {
-    background-color: rgb(0, 0, 0);
-    /* background-color: #f1d9ba; */
-    color: rgb(154, 205, 50);
+    background-image: url(./../public/Images/Background.jpg);
+    background-position: center;
+    background-size: contain;
 }
