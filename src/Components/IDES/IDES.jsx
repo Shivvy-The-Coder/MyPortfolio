@@ -41,11 +41,13 @@ const IDES = () => {
         <div className=' max-w-[70%] mx-auto flex flex-col mt-20'>
             <div>
                 <p data-aos="fade-left"
+                data-aos-delay="600"
                 className='text-yellow-500'
                 >Faimiliar IDE and Development Enviroment</p>
             </div>
             <div>
                 <h1 data-aos="fade-up" 
+                data-aos-delay="1000"
                  className='
                  text-white
                  text-3xl font-bold'
@@ -55,6 +57,7 @@ const IDES = () => {
 
             <div>
                 <p data-aos="fade-up" 
+                data-aos-delay="600"
                  className='text-yellow-500 text-left'>Technical expertise, innovation, and problem-solving drive impactful results.</p>
             </div>
               <div className='mt-20 '>
