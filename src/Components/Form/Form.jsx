@@ -36,11 +36,11 @@ const Form = () => {
           >Lets connect and grow together</p>
         </div>
         <div className='flex items-center 
-                        sm:max-w-[70%] sm:mx-auto sm:h-[50vh] sm:p-5 
+                        sm:max-w-[70%]  sm:h-[50vh] sm:p-5 
                         w-[90%] mx-auto p-1  bg-white/1
                         backdrop-blur-xl border border-white/20 rounded-sm 
                         shadow-md shadow-white'>
-            <div className='grid sm:grid-cols-2'>
+            <div className='grid sm:grid-cols-2 mx-auto'>
       {/* this section is for the form */}
               <div className='
                       order-2 sm:order-1
@@ -89,8 +89,8 @@ const Form = () => {
               </div>
 
       {/* this section will contain the image */}
-      <div className='order-1 sm:order-2 flex justify-center items-center'>
-      <img className='aspect-w-1 aspect-h-1'
+      <div className='order-1 sm:order-2 flex justify-center items-center '>
+      <img className='aspect-w-1 aspect-h-1 w-[70%]'
        src={Connect} alt="" />
       </div>
 </div>
