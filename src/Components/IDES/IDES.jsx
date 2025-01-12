@@ -59,7 +59,7 @@ const IDE=[
 const IDES = () => {
   return (
     <div  className='bg-black-900'>
-        <div className=' max-w-[70%] mx-auto flex flex-col mt-20'>
+        <div className=' sm:max-w-[70%] mx-auto flex flex-col mt-20'>
             <div>
                 <p data-aos="fade-left"
                 data-aos-delay="600"

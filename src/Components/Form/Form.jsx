@@ -29,15 +29,17 @@ const FormData=
 
 const Form = () => {
   return (
-  <div className='mx-[10vh]   mb-[10vh]'>
+  <div className='mt-[10vh]   mb-[10vh]'>
         <div className="container" style={{padding:"20px"}}>
           <h1 className='text-3xl font-bold text-center text-white'>GET CONNECT</h1>
           <p className='text-center text-yellow-400'
           >Lets connect and grow together</p>
         </div>
-        <div className='flex items-center sm:max-w-[70%] mx-auto sm:h-[50vh] sm:p-5 w-[110%] p-1  bg-white/1
-                                backdrop-blur-xl border border-white/20 rounded-sm 
-                                shadow-md shadow-white'>
+        <div className='flex items-center 
+                        sm:max-w-[70%] sm:mx-auto sm:h-[50vh] sm:p-5 
+                        w-[90%] mx-auto p-1  bg-white/1
+                        backdrop-blur-xl border border-white/20 rounded-sm 
+                        shadow-md shadow-white'>
             <div className='grid sm:grid-cols-2'>
       {/* this section is for the form */}
               <div className='
