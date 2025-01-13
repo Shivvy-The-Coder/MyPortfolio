@@ -6,7 +6,7 @@
 
 body
 {
-    background-image: url(./../public/Images/Background.jpg);
+    background-image: url(/Images/Background.jpg);
     background-position: center;
     background-size: contain;
 }

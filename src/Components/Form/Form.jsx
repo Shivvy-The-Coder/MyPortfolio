@@ -3,27 +3,28 @@ import Connect from "/Images/Connect.png"
 import Inputs from '../Inputs/Inputs';
 
 
+
 const FormData=
 [
   {
     name:"Name",
     type:"text",
-    placeholder:"Enter your name",
+    des:false
   },
   {
     name:"Email",
     type:"enail",
-    placeholder:"Enter your Email",
+    des:false
   },
   {
     name:"Phone",
     type:"phone",
-    placeholder:"Enter your Ph.No",
+    des:false
   },
   {
     name:"Message",
     type:"text",
-    placeholder:"Enter your Message",
+    des:true
   },
 ]
 
@@ -47,7 +48,7 @@ const Form = () => {
                       grid grid-rows-
                       font-Poppin
                       items-center
-                      gap-5
+                      gap-10
                       '>
                 <div className='text-center '>
                   <h1 className='text-4xl font-bold text-yellow-500 '
@@ -58,7 +59,7 @@ const Form = () => {
 
                 <div className='text-center'>
               <form
-              className='flex flex-col  gap-4' 
+              className='flex flex-col  gap-2' 
               action="">
 
                 {/* <Inputs
@@ -72,6 +73,7 @@ const Form = () => {
                       name={data.name}
                       type={data.type}
                       placeholder={data.placeholder}
+                      des={data.des}
                       />
                     </div>
                   ))
@@ -81,9 +83,9 @@ const Form = () => {
               </form>
                 </div>
            
-                 <div className='flex flex-row justify-center mt-2 '>
+                 <div className='flex flex-row justify-end  mt-2 '>
               <button
-              className='bg-green-600 h-[3vh] border-2 rounded-md shadow-sm shadow-white '
+              className='bg-green-600 border-2 rounded-md shadow-sm shadow-white mt-7 felx mr-5 text-white p-1 '
               >Submit</button>
                  </div>
               </div>

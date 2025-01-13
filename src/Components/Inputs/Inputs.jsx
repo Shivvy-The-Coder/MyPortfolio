@@ -1,6 +1,11 @@
 import React from 'react'
 
-const Inputs = ({name, type, placeholder}) => {
+const Inputs = ({name, type,des}) => {
+
+    var height="3vh";
+        if(des==true)
+            height="10vh";
+            
 
   return (
     <div>
@@ -16,8 +21,9 @@ const Inputs = ({name, type, placeholder}) => {
             >
                 <form >
                     <input
-                    className='font-normal w-[90%] rounded-[5px] h-[3vh] p-2 bg-white/10 ' 
-                    type={type} placeholder={placeholder} />
+                    style={{height:height}}
+                    className='font-normal w-[90%] rounded-[5px] p-2 bg-white/10 ' 
+                    type={type}  />
                 </form>
             </div>
         </div>
