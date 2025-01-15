@@ -28,7 +28,7 @@ const Cards = ({ name, link, img, desc, delay, animation, customClass,customeimg
                  mx-auto bg-white/10 rounded-lg`}>
             <img
               className={`transition-transform duration-1000 ease-in-out transform 
-                ${customClass ? '' : 'hover:scale-[125%] hover:translate-y-[-3vh]'} contrast-150 saturate-100`}
+                ${customClass || 'hover:scale-[125%] hover:translate-y-[-3vh]'} contrast-150 saturate-100`}
               src={img}
               alt=""
             />

@@ -96,7 +96,7 @@ const Navbar = () => {
                 className='
                 font-Poppin  invisible  md:visible
                 lg:w-[80%] md:w-[110%] 
-                mx-auto bg-yellow-500/10
+                mx-auto bg-white/10
                 backdrop-blur-md border border-white/20 shadow-lg
                 p-[2.5%] rounded-lg overflow-hidden
                 

@@ -14,7 +14,7 @@ const ProjectList = [
   },
   {
     id: 2,
-    name: 'Git',
+    name: '',
     image: Shopsy,
     link: '#',
     desc: 'Online Shopping Website build properly on tailwind CSs and ',
@@ -58,7 +58,7 @@ const Projects = () => {
         {/* Main Projects Section */}
         <div>
           {ProjectList.map((data) => (
-            <div key={data.id} className="max-w-[70%] mx-auto max-h-[90vh]">
+            <div key={data.id} className="max-w-[80%] mx-auto max-h-[90vh]">
               <Cards
                 customClass="!transition-transform !hover:translate-x-2 !hover:translate-y-2 !hover:scale-100"
                 customeimg="sm:w-[70%] w-[100%] sm:p-[10] p-[1]"
