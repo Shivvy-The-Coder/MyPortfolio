@@ -61,7 +61,7 @@ const Navbar = () => {
                             items-center 
                             fixed
                             top-0
-                            sm:left-[7%]
+                            sm:left-[5%]
                             right-[5%]
                             mx-auto 
                             mt-[12px]  text-white
