@@ -3,8 +3,8 @@ import Me from '/Images/ME.jpg';
 const Myself = () => {
   return (
    <>
-    <div className='mt-[10vh] max-w-[90%]
-                            sm:max-w-[70%] mx-auto'>
+    <div className='mt-[10vh] 
+                            md:w-[80%] sm:w-[70%] w-[95%] mx-auto'>
                 {/* flex justify-center align-middle items-center */}
                 <div className=' bg-white/10 text-white grid sm:grid-cols-2 p-2 relative rounded-3xl mx-auto'>
                         {/* myself Section */}

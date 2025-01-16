@@ -18,13 +18,12 @@ const Inputs = ({name, type,des}) => {
             
             <div
             className='w-[75%] text-right  h-5  '
-            >
-                <form >
+            >               
                     <input
                     style={{height:height}}
                     className='font-normal w-[90%] rounded-[5px] p-2 bg-white/10 ' 
                     type={type}  />
-                </form>
+                
             </div>
         </div>
     </div>

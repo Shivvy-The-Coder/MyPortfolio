@@ -24,7 +24,7 @@ const Cards = ({ name, link, img, desc, delay, animation, customClass,customeimg
 
           {/* Image Section */}
           <div className={`flex justify-center
-                ${customeimg||'p-10  w-[80%] sm:w-[80%]'}
+                ${customeimg||'p-10  w-[80%] '}
                  mx-auto bg-white/10 rounded-lg`}>
             <img
               className={`transition-transform duration-1000 ease-in-out transform 

@@ -52,18 +52,19 @@ const Connect=[
 ]
 const Navbar = () => {
   return (
-    <div className=''>
+    <div >
 
-        {/* Navbar sectoion begins here */}
-            <div className='grid grid-cols-3 
-                            xxs:max-w-[90%]
-                            sm:max-w-[80%]
+       <div className='w-[100%] flex justify-center border-red-500 border-2 group relative'>
+         {/* Navbar sectoion begins here */}
+         <div className='grid grid-cols-3 
+                            w-[90%]
+                            sm:w-[80%]
                             items-center 
+                            group :absolute
                             fixed
                             top-0
                             sm:left-[0%]
                             right-[5%]
-                            mx-auto 
                             mt-[12px]  text-white
                             z-[2000] 
                              bg-white/4
@@ -201,6 +202,7 @@ const Navbar = () => {
                 
             </div>
 
+       </div>
     </div>
   )
 }

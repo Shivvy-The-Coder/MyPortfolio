@@ -83,8 +83,7 @@ const IDES = () => {
             </div>
               <div className='mt-20 '>
               <div
-              data-aos="fade-up"
-               className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-2  '>
+               className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-2 overflow-x-hidden '>
                 {
                     
                       IDE.map((data)=>(
