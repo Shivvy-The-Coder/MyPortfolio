@@ -54,27 +54,25 @@ const Navbar = () => {
   return (
     <div >
 
-       <div className='w-[100%] flex justify-center border-red-500 border-2 group relative'>
+       <div className='w-[100%] flex justify-center '>
          {/* Navbar sectoion begins here */}
          <div className='grid grid-cols-3 
                             w-[90%]
                             sm:w-[80%]
                             items-center 
-                            group :absolute
                             fixed
-                            top-0
-                            sm:left-[0%]
-                            right-[5%]
+                            left-1/5
+                            scale-[80%]
                             mt-[12px]  text-white
                             z-[2000] 
                              bg-white/4
-                                backdrop-blur-xl border border-white/20 shadow-lg rounded-sm '>
+                          backdrop-blur-xl border border-white/20 shadow-lg rounded-sm '>
 
                 {/* this will be for the "Logo Begins" of the PortFolio */}
                 
                 <div className='flex justify-center p-1 relative'>
                         {/* this is the Image Section */}
-                        <div className='object-cover w-[50%] xxs:w-[60%] xs:w-[45%] sm:w-[30%] md:w-[120px] relative '>
+                        <div className='object-cover w-[35%] xxs:w-[55%] xs:w-[40%] sm:w-[25%] md:w-[120px] relative '>
                                 <img className="drop-shadow-2xl" 
                                 src={Logo} alt="" />
                         </div>
