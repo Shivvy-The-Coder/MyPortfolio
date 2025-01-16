@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+      'slow-spin-pulse': 'spin 5s linear infinite, ease-in-out infinite',
+    },
       screens:{
         'xs':'425px',
         'xxs':'320px'

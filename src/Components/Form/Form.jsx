@@ -58,18 +58,21 @@ const Form = () => {
                       font-Poppin
                       items-center
                       gap-10
+                      overflow-hidden
+                      
+                      relative 
                       "
           >
-            <div className="text-center">
-              <h1 className="text-4xl font-bold text-yellow-500">LOREM EPSUM</h1>
+            <div className="text-center z-10">
+              <h1 style={{ textShadow: "5px 1px 2px rgba(1, 1, 1, 0.5)" }} className="text-4xl font-bold text-yellow-600 ">FORM SECTION</h1>
             </div>
 
-            <p className="text-center text-white">
+            <p className="text-center text-white z-10">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, maxime.
             </p>
 
-            <div className="text-center">
-              <form className="flex flex-col gap-2" action="">
+            <div className="text-center ">
+              <form className="flex flex-col gap-2 z-10 " action="">
                 {FormData.map((data) => (
                   <Inputs
                     key={data.id} // Added key directly to Inputs
@@ -82,11 +85,16 @@ const Form = () => {
                 {/* Submit Button Inside the Form */}
                 <button
                   type="submit"
-                  className="bg-green-600 border-2 rounded-md shadow-sm shadow-white mt-16 flex mx-auto text-white p-2"
+                  className="bg-green-600 border-2 rounded-md shadow-sm shadow-white mt-16 flex mx-auto text-white p-2 z-10"
                 >
                   Submit
                 </button>
               </form>
+
+              <div className='absolute bg-yellow-500/80 sm:h-[250px] sm:w-[250px] h-[150px] w-[450px] -top-[30%]  rotate-[50deg] -right-[10%] z-0 rounded-xl'> </div>
+              <div className='absolute bg-yellow-500/80 sm:h-[250px] sm:w-[250px] h-[150px] w-[350px] -bottom-[25%]  rotate-[50deg] -left-[29%] z-0  rounded-xl'> </div>
+
+
             </div>
           </div>
 
