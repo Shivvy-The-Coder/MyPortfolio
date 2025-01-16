@@ -2,10 +2,11 @@ import React from 'react'
 import Me from '/Images/ME.jpg';
 const Myself = () => {
   return (
-    <div className='mt-[20vh] '>
+   <>
+    <div className='mt-[10vh] max-w-[90%]
+                            sm:max-w-[70%] mx-auto'>
                 {/* flex justify-center align-middle items-center */}
-                <div className='max-w-[90%]
-                            sm:max-w-[70%] bg-white/10 text-white grid sm:grid-cols-2 p-2 relative rounded-3xl mx-auto'>
+                <div className=' bg-white/10 text-white grid sm:grid-cols-2 p-2 relative rounded-3xl mx-auto'>
                         {/* myself Section */}
                         <div className='flex flex-col sm:order-1 order-2 sm:gap-0 gap-2'>
                                 
@@ -38,6 +39,7 @@ const Myself = () => {
                 
 
     </div>
+   </>
   )
 }
 
