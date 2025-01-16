@@ -45,7 +45,7 @@ const Form = () => {
       <div
         className="flex items-center 
                         sm:max-w-[70%] sm:h-[50vh] sm:p-5 
-                        w-[90%] mx-auto p-1 bg-white/1
+                        w-[70%] sm:w-[90%] mx-auto p-1 bg-white/1
                         backdrop-blur-xl border border-white/20 rounded-sm 
                         shadow-md shadow-white"
       >
