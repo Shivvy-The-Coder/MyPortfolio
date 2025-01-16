@@ -1,3 +1,5 @@
+
+
 import React from 'react';
 import Logo from '/Images/Logo.png';
 import Button from '../Buttons/Button';
@@ -26,7 +28,6 @@ const Navbar = () => {
       <div
         className="
           fixed top-0 left-1/2 
-          transform -translate-x-1/2
           w-[90%] sm:w-[80%]
           mt-3 
           z-[2000]
