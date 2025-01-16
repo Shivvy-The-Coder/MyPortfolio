@@ -16,7 +16,9 @@ const Myself = () => {
                                     MYSELF</h1>
                                 </div>
                                 
-                                <div className='h-[50%] flex justify-center items-center'>
+                                <div
+                                aos- 
+                                className='h-[50%] flex justify-center items-center'>
                                 <p className='p-5 '>
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                                     Accusamus officia, quas doloremque repellat ipsa eum reiciendis culpa omnis facilis 

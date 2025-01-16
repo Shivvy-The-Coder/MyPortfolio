@@ -48,6 +48,7 @@ import IDES from './Components/IDES/IDES';
 import Form from './Components/Form/Form';
 import Projects from './Components/Projects/Projects';
 import Myself from './Components/Myself/Myself';
+import Footer from './Components/Footer/Footer';
 
 const App = () => {
   React.useEffect(() => {
@@ -68,9 +69,9 @@ const App = () => {
       <Hero />
       <Skills />
       <IDES />
-      <Form />
       <Projects />
-
+      <Form />
+      <Footer/>
     </>
   );
 };
