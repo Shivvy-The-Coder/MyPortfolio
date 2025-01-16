@@ -21,14 +21,25 @@ const App = () => {
   },[]);
   return (
     <div>
-      <Navbar/>
-      <Myself/>
-      <Hero/>
-      <Skills/>
-      <IDES/>
-      <Form/>
-      <Projects/>
-    </div>
+  {/* Navbar */}
+  <Navbar />
+
+  {/* Main Content */}
+  <div
+    className="
+      w-full  relative left-[20%]
+      mt-[100px] // Adjust this value to match the height of your Navbar
+    "
+  >
+    <Myself />
+    <Hero />
+    <Skills />
+    <IDES />
+    <Form />
+    <Projects />
+  </div>
+</div>
+
   )
 }
 
