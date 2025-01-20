@@ -14,7 +14,7 @@ const ProjectList = [
   },
   {
     id: 2,
-    name: '',
+    name: 'Online Ecommerce Clothes Website',
     image: Shopsy,
     link: '#',
     desc: 'Online Shopping Website build properly on tailwind CSs and ',
