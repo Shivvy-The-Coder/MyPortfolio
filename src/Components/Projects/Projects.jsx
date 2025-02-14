@@ -1,30 +1,30 @@
-import React from 'react';
-import Cards from '../Cards';
-import Shopsy from '/Images/Shopsy.png';
-import Dice from '/Images/DiceGame.png';
-import BIT from '/Images/BIT.png';
+import React from "react";
+import Cards from "../Cards";
+import Shopsy from "/Images/Shopsy.png";
+import Dice from "/Images/DiceGame.png";
+import BIT from "/Images/BIT.png";
 
 const ProjectList = [
   {
     id: 1,
-    name: 'Dice Game',
+    name: "Dice Game",
     image: Dice,
-    link: '#',
-    desc: 'A simple but quite engaging and fun game of Dices where you can score all you want unlimitedly',
+    link: "#",
+    desc: "A simple but quite engaging and fun game of Dices where you can score all you want unlimited",
   },
   {
     id: 2,
-    name: 'Online Ecommerce Clothes Website',
+    name: "Online Ecommerce Clothes Website",
     image: Shopsy,
-    link: '#',
-    desc: 'Online Shopping Website build properly on tailwind CSs and ',
+    link: "#",
+    desc: "Online Shopping Website build properly on tailwind CSs and ",
   },
   {
     id: 3,
-    name: 'Git-Hub',
+    name: "Git-Hub",
     image: BIT,
-    link: '#',
-    desc: 'GitHub is a cloud-based platform for hosting Git repositories, offering collaboration, issue tracking, CI/CD integration, and open-source project hosting, simplifying teamwork and code sharing for developers.',
+    link: "#",
+    desc: "GitHub is a cloud-based platform for hosting Git repositories, offering collaboration, issue tracking, CI/CD integration, and open-source project hosting, simplifying teamwork and code sharing for developers.",
   },
 ];
 
@@ -43,14 +43,15 @@ const Projects = () => {
             <h1
               data-aos="fade-up"
               className="text-3xl font-bold"
-              style={{ textShadow: '1px 1px 8px  rgba(60, 61, 61, 0.863)' }}
+              style={{ textShadow: "1px 1px 8px  rgba(60, 61, 61, 0.863)" }}
             >
               PROJECT'S SECTION
             </h1>
           </div>
           <div>
             <p data-aos="fade-up" className="text-yellow-500">
-              Dedicated to creating projects that leave a lasting positive impression.
+              Dedicated to creating projects that leave a lasting positive
+              impression.
             </p>
           </div>
         </div>
