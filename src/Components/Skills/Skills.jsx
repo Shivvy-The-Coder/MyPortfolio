@@ -8,14 +8,12 @@ import Node from "/Images/NodeJs.png"
 import Mongo from "/Images/MongoDB.png" 
 import MYSQL from "/Images/MySqL.png" 
 import 'aos/dist/aos.css'
-import styled from 'styled-components'
 
 const Skill =[
     {
         id:1,
         img:Html,
         title:"HTML",
-        Exper:"3-4 Years",
         aosDelay:"0",
         aosAnimation:"fade-up"
     },
@@ -23,7 +21,6 @@ const Skill =[
         id:2,
         img:CSS,
         title:"CSS",
-        Exper:"3-4 Years",
         aosDelay:"200",
         aosAnimation:"fade-up"
     },
@@ -31,7 +28,6 @@ const Skill =[
         id:3,
         img:JS,
         title:"JAVA SCRIPT",
-        Exper:"1-2 Years",
         aosDelay:"400",
         aosAnimation:"fade-up"
     },
@@ -39,7 +35,6 @@ const Skill =[
         id:4,
         img:JAVA,
         title:"JAVA",
-        Exper:"3-4 Years",
         aosDelay:"600",
         aosAnimation:"fade-up"
     },
@@ -47,7 +42,6 @@ const Skill =[
         id:5,
         img:Reacct,
         title:"React JS",
-        Exper:"1 Year",
         aosDelay:"800",
         aosAnimation:"fade-up"
     },
@@ -55,7 +49,6 @@ const Skill =[
         id:6,
         img:Node,
         title:"Node Js",
-        Exper:"1 Year",
         aosDelay:"1000",
         aosAnimation:"fade-up"
     },
@@ -63,7 +56,6 @@ const Skill =[
         id:7,
         img:Mongo,
         title:"Mongo DB",
-        Exper:"1 Year",
         aosDelay:"1200",
         aosAnimation:"fade-up"
     },
@@ -71,7 +63,6 @@ const Skill =[
         id:8,
         img:MYSQL,
         title:"My SQL",
-        Exper:"1-2 Years",
         aosDelay:"1400",
         aosAnimation:"fade-up"
     },
@@ -163,9 +154,6 @@ const Skills = () => {
                                                saturate-200'
                                      src={data.img} alt=""/>
                                 </div>
-                                <p className='text-center  text-yellow-500 font-light'>
-                                    {data.Exper}
-                                </p>
                               </div>      
                             ))}
             </div>

@@ -1,5 +1,4 @@
-import React from 'react'
-import Logo from "/Images/Logo.png"
+import Logo from "/Images/Logo.png";
 import Button from '../Buttons/Button';
 import { BiSearchAlt } from "react-icons/bi";
 import { AiOutlineUser } from "react-icons/ai";
@@ -63,7 +62,7 @@ const Navbar = () => {
                             fixed
                             left-1/5
                             scale-[80%]
-                            mt-[12px]  text-white
+                            my-[12px]  text-white
                             z-[2000] 
                              bg-white/4
                           backdrop-blur-xl border border-white/20 shadow-lg rounded-sm '>
@@ -95,17 +94,15 @@ const Navbar = () => {
                 className='
                 font-Poppin  invisible  md:visible
                 lg:w-[80%] md:w-[110%] 
-                mx-auto bg-white/10
-                backdrop-blur-md border border-white/20 shadow-lg
+                mx-auto 
+                 border shadow-lg
                 p-[2.5%] rounded-lg overflow-hidden
                 
                 '>
-                        <div className=' grid grid-cols-4    gap-2 text-[70%]'>
+                        <div className=' grid grid-cols-4    gap-2'>
                                {
                                 Actions.map((data)=>(
-                                        <Button
-                                        className=" text-yellow-400"
-                                        key={data.id}  name={data.name}/>  
+                                        data.name  
                                 ))}
                         </div>
                 </div>

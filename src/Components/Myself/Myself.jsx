@@ -1,10 +1,9 @@
-import React from 'react'
 import Me from '/Images/ME.jpg'
 import Fan from '/Images/Fan.png'
 const Myself = () => {
   return (
    <>
-    <div className='mt-[10vh] 
+    <div className='md:mt-[14vh] mt-[10vh] 
                             md:w-[80%] sm:w-[70%] w-[95%] mx-auto'>
                 {/* flex justify-center align-middle items-center */}
                 <div className=' bg-white/10 text-white grid sm:grid-cols-2 p-2 relative rounded-3xl mx-auto'>
@@ -19,7 +18,6 @@ const Myself = () => {
                                 </div>
                                 
                                 <div
-                                aos- 
                                 className='h-[50%] flex justify-center items-center z-30'>
                                 <p className='p-5 '>
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
